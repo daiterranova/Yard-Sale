@@ -535,3 +535,107 @@ form p {
   font-size: var(--lg);
   margin: 0;
 }
+
+/* My order */
+.my-order-container {
+  display: grid;
+  width: 25rem;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+}
+.my-order-total {
+  background-color: var(--text-input-field);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.75rem;
+  border-radius: 0.5rem;
+}
+.my-order-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+}
+.my-order-total .price {
+  padding-right: 1.5rem;
+  color: var(--dark-color);
+}
+.my-order-info .description {
+  margin-top: 0;
+  font-size: var(--sm);
+}
+
+.my-order-info :nth-child(1) {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: var(--md);
+}
+.my-order-cards {
+  width: 100%;
+  gap: 1rem;
+  display: grid;
+}
+.my-order-image {
+  width: 73px;
+  height: 73px;
+}
+.card-my-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-my-order figure {
+  margin: 0;
+}
+.card-my-order .description {
+  font-weight: 400;
+  font-size: var(--sm);
+}
+.card-image-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+.card-my-order .price {
+  color: var(--dark-color);
+  padding-right: 1.5rem;
+}
+/* My orders */
+.my-orders-container {
+  margin-top: 1rem;
+  width: 22rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  place-items: start;
+  gap: 2rem;
+}
+.my-order-price {
+  display: flex;
+  flex-direction: row;
+}
+.my-orders-total {
+  background-color: transparent;
+}
+.my-orders-info {
+  padding-left: 0;
+}
+.my-orders-list {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .logo-img {
+    display: block;
+  }
+
+  .form-create,
+  .form-edit {
+    justify-content: space-between;
+  }
+  .my-order-title {
+    visibility: hidden;
+  }
+}
