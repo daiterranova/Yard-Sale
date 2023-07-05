@@ -30,7 +30,6 @@ body {
   width: 150px;
   margin-bottom: 48px;
   justify-self: center;
-  display: none;
 }
 .title {
   font-size: var(--lg);
@@ -392,10 +391,58 @@ form p {
 .my-orders-list {
   width: 100%;
 }
+/* Navbar */
+
+.navbar {
+  width: 90%;
+  height: 3.37rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
+}
+
+.dropdown-icon {
+  display: none;
+  width: ;
+}
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.navbar-list a {
+  text-decoration: none;
+  color: var(--very-light-pinki);
+  font-weight: 500;
+  font-size: var(--md);
+  line-height: 20px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+.navbar-logo {
+  margin-bottom: 0;
+}
+.navbar-left ul li a:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-weight: 700;
+}
 
 @media (max-width: 640px) {
   .logo-img {
-    display: block;
+    display: none;
   }
 
   .form-create,
@@ -404,5 +451,19 @@ form p {
   }
   .my-order-title {
     visibility: hidden;
+  }
+  .dropdown-icon {
+    display: block;
+    width: 1.5rem;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+  .email {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-around;
+    padding: 0;
   }
 }
