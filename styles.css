@@ -1,6 +1,6 @@
 :root {
   --background-color: #ffffff;
-  --secondary-color: #000000;
+  --secondary-color: #797979;
   --very-light-pinki: #c7c7c7;
   --text-input-field: #f7f7f7;
   --primary-color: #acd9b2;
@@ -211,7 +211,7 @@ form p {
   font-weight: 700;
 }
 .description {
-  color: var(--very-light-pinki);
+  color: var(--secondary-color);
   font-weight: 400;
 }
 .container-shopping-cart {
@@ -466,4 +466,72 @@ form p {
     justify-content: space-around;
     padding: 0;
   }
+}
+/* Product Detail Image */
+.detail-product-container {
+  width: 25%;
+  height: auto;
+}
+
+.product-detail-card {
+  width: 100%;
+  position: relative;
+}
+.product-detail-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+.add-to-cart-btn img {
+  color: var(--background-color);
+}
+.product-detail-info {
+  padding: 2rem;
+}
+.card-close-button {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  border-radius: 50%;
+  padding: 0.8rem;
+  background-color: var(--background-color);
+  border: none;
+  cursor: pointer;
+}
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.button-slider {
+  background-color: var(--text-input-field);
+  height: 0.7rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.button-slider:hover {
+  background-color: var(--very-light-pinki);
+}
+.product-detail-title {
+  font-size: var(--lg);
+  margin-top: 0;
+}
+.product-detail-description {
+  font-size: var(--md);
+  padding-bottom: 2.4rem;
+}
+.product-detail-price {
+  font-size: var(--lg);
+  margin: 0;
 }
